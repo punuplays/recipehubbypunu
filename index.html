@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#17141d">
+
+    <meta name="description"
+        content="RecipeHub by Puniket - Discover, Cook and Enjoy delicious recipes.">
+
+    <title>RecipeHub by Puniket</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="main-header">
+
+        <div class="logo">
+            <span class="logo-icon">🍳</span>
+            <span>Recipe<span class="pink">Hub</span></span>
+        </div>
+
+        <nav class="navigation">
+            <a href="#home">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="#featured">Recipes</a>
+            <a href="#about">About</a>
+        </nav>
+<a href="#favourites">❤️ Favourites</a>
+      <div class="header-actions">
+    <button class="login-btn" id="login-button" type="button">
+        Login
+    </button>
+
+    <button class="signup-btn" id="signup-button" type="button">
+        Sign Up
+    </button>
+
+<button class="login-btn" id="profile-button" type="button">
+    My Profile
+</button>
+
+</div>
+
+    </header>
+
+
+    <!-- MAIN HOME -->
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <span class="hero-tag">
+                    ✨ YOUR PERSONAL COOKING COMPANION
+                </span>
+
+                <h1>
+                    Discover Recipes.
+                    <span class="pink">Create Magic.</span>
+                </h1>
+
+                <p>
+                    Explore delicious recipes from around the world.
+                    Learn new cooking techniques and create amazing meals
+                    with RecipeHub.
+                </p>
+
+                <div class="hero-search">
+    <input
+        type="search"
+        id="recipe-search"
+        placeholder="Search your favourite recipes..."
+        aria-label="Search recipes"
+    >
+    <button id="search-button" type="button">Search</button>
+    <button id="clear-search"type="button">Clear</button>
+</div>
+
+                <div class="hero-stats">
+                    <div>
+                        <h3>500+</h3>
+                        <span>Recipes</span>
+                    </div>
+
+                    <div>
+                        <h3>10+</h3>
+                        <span>Categories</span>
+                    </div>
+
+                    <div>
+                        <h3>Global</h3>
+                        <span>Food Collection</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+                <img
+    class="hero-food-image"
+    src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1000"
+    alt="Freshly prepared delicious pizza"
+>
+            </div>
+
+        </section>
+
+
+        <!-- CATEGORIES -->
+        <section class="categories-section" id="categories">
+
+            <div class="section-heading">
+                <div>
+                    <span class="pink">EXPLORE</span>
+                    <h2>Food Categories</h2>
+                </div>
+            </div>
+
+         <div class="category-grid">
+
+    <div class="category-card" data-category="Pizza">
+        <span>🍕</span>
+        <h3>Pizza</h3>
+    </div>
+
+    <div class="category-card" data-category="Burgers">
+        <span>🍔</span>
+        <h3>Burgers</h3>
+    </div>
+
+    <div class="category-card" data-category="Pasta">
+        <span>🍝</span>
+        <h3>Pasta</h3>
+    </div>
+
+    <div class="category-card" data-category="Desserts">
+        <span>🍰</span>
+        <h3>Desserts</h3>
+    </div>
+
+    <div class="category-card" data-category="Healthy Food">
+        <span>🥗</span>
+        <h3>Healthy Food</h3>
+    </div>
+
+    <div class="category-card" data-category="Indian Food">
+        <span>🍛</span>
+        <h3>Indian Food</h3>
+    </div>
+
+    <div class="category-card" data-category="Breakfast">
+        <span>🥪</span>
+        <h3>Breakfast</h3>
+    </div>
+
+    <div class="category-card" data-category="Snacks">
+        <span>🍟</span>
+        <h3>Snacks</h3>
+    </div>
+
+    <div class="category-card" data-category="Drinks">
+        <span>🥤</span>
+        <h3>Drinks</h3>
+    </div>
+
+    <div class="category-card" data-category="Asian Food">
+        <span>🍜</span>
+        <h3>Asian Food</h3>
+    </div>
+
+</div>
+
+        </section>
+
+<!-- FAVOURITE RECIPES -->
+<section class="featured-section" id="favourites">
+
+    <div class="section-heading">
+        <div>
+            <span class="pink">YOUR COLLECTION</span>
+            <h2>❤️ Favourite Recipes</h2>
+        </div>
+    </div>
+
+    <p id="favourite-count" class="recipe-count">
+        0 Favourite Recipes
+    </p>
+
+    <div id="favourite-recipes">
+        <!-- Favourite recipes will appear here -->
+    </div>
+
+</section>
+
+        <!-- FEATURED RECIPES -->
+        <section class="featured-section" id="featured">
+
+            <div class="section-heading">
+                <div>
+                    <span class="pink">HANDPICKED FOR YOU</span>
+                    <h2>Featured Recipes</h2>
+                </div>
+
+                <a href="#featured">View All →</a>
+            </div>
+<button id="show-all-recipes" class="signup-btn" type="button">
+    View All Recipes
+</button>
+
+<p id="recipe-count"
+class="recipe-count">
+3 Recipes Available
+</p>
+<div id="featured-recipes">
+    <!-- Recipes will be loaded using JavaScript -->
+</div>
+
+            
+        </section>
+
+
+        <!-- ABOUT -->
+        <section class="about-section" id="about">
+            <h2>Welcome to RecipeHub</h2>
+
+            <p>
+                Discover. Cook. Enjoy.
+                Your journey to better cooking starts here.
+            </p>
+
+            <span>© 2026 RecipeHub by Puniket. All Rights Reserved.</span>
+        </section>
+
+    </main>
+
+<!-- AUTHENTICATION MODAL -->
+
+<div class="auth-modal" id="auth-modal">
+
+    <div class="auth-box">
+
+        <button class="auth-close" id="auth-close">×</button>
+
+        <h2 id="auth-title">Welcome Back!</h2>
+
+        <p id="auth-description">
+            Login to your RecipeHub account.
+        </p>
+
+<button type="button" class="google-login-btn" id="google-login-btn">
+    <span>G</span> Continue with Google
+</button>
+
+<div class="auth-divider">
+    <span>OR CONTINUE WITH EMAIL</span>
+</div>
+
+        <form id="auth-form">
+
+            <input
+                type="email"
+                id="auth-email"
+                placeholder="Enter your email"
+                required
+            >
+
+           <div class="password-wrapper">
+    <input type="password" id="auth-password" placeholder="Enter your password" required>
+    <button type="button" id="toggle-password" class="toggle-password">👁</button>
+</div>
+
+<div class="forgot-password-wrapper">
+    <a href="#" id="forgot-password">
+        Forgot Password?
+    </a>
+</div>
+
+<div class="password-strength" id="password-strength">
+    <div class="strength-bar">
+        <span id="strength-fill"></span>
+    </div>
+    <p id="strength-text">Enter a password</p>
+</div>
+
+<div class="confirm-password-wrapper" id="confirm-password-wrapper">
+    <input
+        type="password"
+        id="confirm-password"
+        placeholder="Confirm your password"
+    >
+    <p id="confirm-password-message"></p>
+</div>
+
+            <button type="submit" id="auth-submit">
+                Login
+            </button>
+
+        </form>
+
+        <p id="auth-switch">
+            Don't have an account? Sign Up
+        </p>
+
+    </div>
+
+</div>
+
+<!-- USER PROFILE DASHBOARD -->
+
+<div class="profile-modal" id="profile-modal">
+    <div class="profile-box">
+
+        <button class="profile-close" id="profile-close">×</button>
+
+        <div class="profile-avatar">👤</div>
+
+        <h2>My Profile</h2>
+        <p class="profile-welcome">Welcome to RecipeHub!</p>
+
+        <div class="profile-info">
+            <p><strong>Name:</strong> <span id="profile-name">RecipeHub User</span></p>
+            <p><strong>Email:</strong> <span id="profile-email">user@example.com</span></p>
+        </div>
+
+        <div class="profile-options">
+            <button id="profile-favourites">❤️ My Favourite Recipes</button>
+            <button id="profile-saved">📚 My Saved Recipes</button>
+            <button id="profile-settings">⚙️ Account Settings</button>
+        </div>
+
+        <button class="profile-logout" id="profile-logout">
+            Logout
+        </button>
+
+    </div>
+</div>
+
+    <!-- JAVASCRIPT -->
+     <script src="js/recipes-data.js"></script>
+    <script src="js/app.js"></script>
+
+    <script type="module" src="js/firebase.js"></script>
+
+</body>
+</html>
